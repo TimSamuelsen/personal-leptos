@@ -70,13 +70,19 @@ pub fn WorkSection() -> impl IntoView {
             </div>
             {experiences.into_iter().map(|exp| (WorkExperienceItemProps { exp: exp })).collect::<Vec<_>>()}
 
+            <div class="flex justify-between items-center w-full"
+                
+                 style="border-top: 1px solid #444; padding: 15px;"
+            >
             <button
-                style="border-bottom: 1px solid #444;"
-                class="bg-transparent border border-white text-white px-4 py-2r"
-              >
-                Resume
-                <img src="/public/download.svg" style="width: 20px; height: 20px; margin-left: 5px;"/>
+                onclick="window.open('/public/tim_resume.pdf', '_blank')"
+                class="flex justify-center items-center w-full bg-transparent border border-333 text-white px-4 py-2 transition-all duration-200 hover:bg-gray-900 hover:text-white"
+                style="border: 1px solid #333; font-size: 1.2em;"
+            >
+              Resume
+              <img src="/public/download.svg" style="width: 22px; height: 22px; margin-left: 5px;"/>
             </button>
+            </div>
 
         </div>
     }

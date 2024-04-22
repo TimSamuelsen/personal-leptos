@@ -4,7 +4,11 @@ module.exports = {
     files: ["*.html", "./src/**/*.rs"],
   },
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'source-code-pro': ['Source Code Pro', 'monospace'],  // Custom font definition
+      },
+    },
   },
   plugins: [],
 }

@@ -27,15 +27,17 @@ html {
 .work-section {
   padding: 20px;
   border: 1px solid #333;
-  background: #222;
+  background: #111;
   max-width: 1200px; /* Increased width to allow for more space */
   margin: 0 auto; /* Center the section */
+
 }
 
 .work-item {
   display: flex;
   align-items: center; /* Ensure content aligns along the center line */
   padding: 5px; /* Add padding for spacing */
+  padding-bottom: 10px;
 }
 
 .work-details {

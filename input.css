@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* style highlighted text */
+::selection {
+  background-color: #47a3f3;
+  color: #fefefe;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sh-class: #4c97f8;
+    --sh-identifier: white;
+    --sh-keyword: #f47067;
+    --sh-string: #0fa295;
+  }
+  html {
+    color-scheme: dark;
+  }
+}
+
+html {
+  min-width: 360px;
+}
+
+.work-section {
+  padding: 20px;
+  border: 1px solid #333;
+  background: #222;
+  max-width: 1200px; /* Increased width to allow for more space */
+  margin: 0 auto; /* Center the section */
+}
+
+.work-item {
+  display: flex;
+  align-items: center; /* Ensure content aligns along the center line */
+  padding: 5px; /* Add padding for spacing */
+  border-bottom: 1px solid #444; /* Optional divider between work items */
+}
+
+.work-details {
+  display: flex;
+  flex-direction: column; /* Stack company and job title vertically */
+  align-items: flex-start; /* Align text to the left */
+}
+
+.work-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.company {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.job-title {
+  font-size: 1em;
+  color: #ccc; /* Adjusted color for distinction */
+}
+
+.dates {
+  font-size: 0.9em; /* Slightly larger font size for dates */
+  color: gray;
+}

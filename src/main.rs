@@ -1,18 +1,27 @@
+mod work;
+
 use leptos::*;
+use leptos_meta::Stylesheet;
+
+use work::WorkSection;
 
 #[component]
 fn App() -> impl IntoView {
-    let (count, set_count) = create_signal(0);
+    //let (count, set_count) = create_signal(0);
 
     view! {
-        <button
-            on:click = move |_| {
-                set_count.update(|n| *n += 1);
-            }
-        >
-            "Click me: "
-            {move || count.get()}
-        </button>
+        <Stylesheet id="leptos" href="/style/output.css"/>
+
+        <h2 class="text-2xl font-bold text-black">
+            "A start"
+        </h2>
+
+        <div class="h-90-screen flex justify-center items-center">
+            <div class="pt-20 mb-10 mx-auto px-5 w-full lg:px-0 lg:max-w-[90ch]">
+                <WorkSection/>
+            </div>
+        </div>
+        
     }
 }
 

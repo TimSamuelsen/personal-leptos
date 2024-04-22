@@ -69,6 +69,15 @@ pub fn WorkSection() -> impl IntoView {
               <div class="section-header">Work</div>
             </div>
             {experiences.into_iter().map(|exp| (WorkExperienceItemProps { exp: exp })).collect::<Vec<_>>()}
+
+            <button
+                style="border-bottom: 1px solid #444;"
+                class="bg-transparent border border-white text-white px-4 py-2r"
+              >
+                Resume
+                <img src="/public/download.svg" style="width: 20px; height: 20px; margin-left: 5px;"/>
+            </button>
+
         </div>
     }
 }

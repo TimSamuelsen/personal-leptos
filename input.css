@@ -36,7 +36,6 @@ html {
   display: flex;
   align-items: center; /* Ensure content aligns along the center line */
   padding: 5px; /* Add padding for spacing */
-  border-bottom: 1px solid #444; /* Optional divider between work items */
 }
 
 .work-details {
@@ -48,7 +47,7 @@ html {
 .work-icon {
   width: 40px;
   height: 40px;
-  margin-right: 5px; /* Space between icon and text */
+  margin-right: 15px; /* Space between icon and text */
 }
 
 .company {
@@ -62,6 +61,20 @@ html {
 }
 
 .dates {
-  font-size: 0.9em; /* Slightly larger font size for dates */
+  font-size: 1em; /* Slightly larger font size for dates */
+  margin-left: auto;
   color: gray;
+}
+
+.section-header {
+  font-size: 1.2em; /* Larger font size for the header */
+  font-weight: bold; /* Make it bold */
+  display: flex; /* Use flex to align elements */
+  justify-content: space-between; /* Spread elements across the width */
+  align-items: center; /* Align elements vertically */
+}
+
+.section-header svg {
+  width: 24px; /* Adjust as needed */
+  height: 24px;
 }

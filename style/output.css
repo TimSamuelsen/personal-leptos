@@ -567,8 +567,16 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-full {
@@ -583,27 +591,34 @@ video {
   justify-content: center;
 }
 
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
 
-.pt-20 {
+.py-20 {
   padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 /* style highlighted text */
@@ -651,8 +666,6 @@ html {
   /* Ensure content aligns along the center line */
   padding: 5px;
   /* Add padding for spacing */
-  border-bottom: 1px solid #444;
-  /* Optional divider between work items */
 }
 
 .work-details {
@@ -666,7 +679,7 @@ html {
 .work-icon {
   width: 40px;
   height: 40px;
-  margin-right: 5px;
+  margin-right: 15px;
   /* Space between icon and text */
 }
 
@@ -682,9 +695,29 @@ html {
 }
 
 .dates {
-  font-size: 0.9em;
+  font-size: 1em;
   /* Slightly larger font size for dates */
+  margin-left: auto;
   color: gray;
+}
+
+.section-header {
+  font-size: 1.2em;
+  /* Larger font size for the header */
+  font-weight: bold;
+  /* Make it bold */
+  display: flex;
+  /* Use flex to align elements */
+  justify-content: space-between;
+  /* Spread elements across the width */
+  align-items: center;
+  /* Align elements vertically */
+}
+
+.section-header svg {
+  width: 24px;
+  /* Adjust as needed */
+  height: 24px;
 }
 
 @media (min-width: 1024px) {
@@ -695,5 +728,17 @@ html {
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-\[\#121212\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(18 18 18 / var(--tw-bg-opacity));
+  }
+
+  .dark\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 }

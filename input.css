@@ -80,3 +80,19 @@ html {
   width: 24px; /* Adjust as needed */
   height: 24px;
 }
+
+.button-common {
+  display: flex;
+  justify-content: space-between;  /* Distribute space evenly */
+  align-items: center;  /* Aligns items vertically */
+  width: 100%;  /* Button takes full width */
+  background: transparent;
+  border: 1px solid #333;
+  padding: 0.5rem 1rem;  /* Padding for spacing */
+  transition: all 0.2s ease;  /* Smooth transition for hover effects */
+}
+
+.button-common:hover {
+  background: #333;  /* Darker background on hover */
+  color: white;  /* Text color change on hover */
+}

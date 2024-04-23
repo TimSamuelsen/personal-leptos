@@ -579,8 +579,24 @@ video {
   height: 100vh;
 }
 
+.w-1\/3 {
+  width: 33.333333%;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
+}
+
 .w-full {
   width: 100%;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -599,6 +615,12 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .space-y-8 > :not([hidden]) ~ :not([hidden]) {
@@ -646,10 +668,6 @@ video {
 
 .text-left {
   text-align: left;
-}
-
-.font-source-code-pro {
-  font-family: Source Code Pro, monospace;
 }
 
 .text-3xl {
@@ -776,6 +794,29 @@ html {
   height: 24px;
 }
 
+.button-common {
+  display: flex;
+  justify-content: space-between;
+  /* Distribute space evenly */
+  align-items: center;
+  /* Aligns items vertically */
+  width: 100%;
+  /* Button takes full width */
+  background: transparent;
+  border: 1px solid #333;
+  padding: 0.5rem 1rem;
+  /* Padding for spacing */
+  transition: all 0.2s ease;
+  /* Smooth transition for hover effects */
+}
+
+.button-common:hover {
+  background: #333;
+  /* Darker background on hover */
+  color: white;
+  /* Text color change on hover */
+}
+
 .hover\:bg-gray-900:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
@@ -787,10 +828,6 @@ html {
 }
 
 @media (min-width: 1024px) {
-  .lg\:max-w-\[90ch\] {
-    max-width: 90ch;
-  }
-
   .lg\:max-w-\[100ch\] {
     max-width: 100ch;
   }

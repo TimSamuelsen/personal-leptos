@@ -1,4 +1,5 @@
 mod app;
+mod postcard;
 mod work;
 
 use leptos::*;

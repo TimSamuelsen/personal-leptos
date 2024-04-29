@@ -4,6 +4,7 @@ use leptos_meta::Link;
 use leptos_router::*;
 
 use crate::work::WorkSection;
+use crate::postcard::Projects;
 
 #[component]
 fn Home() -> impl IntoView {
@@ -28,6 +29,12 @@ fn Home() -> impl IntoView {
             <div class="flex justify-center items-center">
               <div class="pt-5 mb-10 mx-auto px-5 w-full lg:px-0 lg:max-w-[100ch]">
                   <WorkSection/>
+              </div>
+            </div>
+
+            <div class="flex justify-center items-center">
+              <div class="pt-5 mb-10 mx-auto px-5 w-full lg:px-0 lg:max-w-[100ch]">
+                <Projects/>
               </div>
             </div>
         </main>

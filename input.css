@@ -96,3 +96,10 @@ html {
   background: #333;  /* Darker background on hover */
   color: white;  /* Text color change on hover */
 }
+
+.circular-image {
+  border-radius: 50%;   /* This makes the image round */
+  border: 2px solid #000000; /* Adjusts the thickness and color of the border */
+  width: 100px;         /* Adjusts the size of the image */
+  height: 100px;        /* Height should be the same as width to maintain the circle shape */
+}

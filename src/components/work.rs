@@ -76,12 +76,11 @@ pub fn WorkSection() -> impl IntoView {
             >
             <button
                 onclick="window.open('/public/tim_resume.pdf', '_blank')"
-                //class="flex justify-center items-center w-full bg-transparent border border-333 text-white px-4 py-2 transition-all duration-200 hover:bg-gray-900 hover:text-white"
                 class="button-common"
                 style="justify-content: center;"
             >
               Resume
-              <img src="/public/download.svg" style="width: 22px; height: 22px; margin-left: 5px;"/>
+              <img src="/public/arrow-up-right.svg" style="width: 22px; height: 22px; margin-left: 5px;"/>
             </button>
             </div>
 

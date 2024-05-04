@@ -6,7 +6,7 @@ use crate::components::postcard::Projects;
 #[component]
 pub fn Home() -> impl IntoView {
     view! {
-        <main class="dark:bg-[#121212] bg-white dark:text-white h-screen w-full py-20 space-y-8 font-robotomono">
+        <main class="dark:bg-[#121212] bg-white dark:text-white h-screen w-full py-20 space-y-4 font-robotomono">
             <div class="flex justify-center items-center">
               <div class="text-left space-y-2 pt-5 mb-10 mx-auto px-5 w-full lg:px-0 lg:max-w-[100ch]">
                 <p class="text-3xl font-bold">Tim Samuelsen</p>
@@ -17,20 +17,21 @@ pub fn Home() -> impl IntoView {
                     smart product design. Software and systems developer for advanced CLIP 3D printers at the DeSimone Research Group.</p>
                   </div>
 
-                  <div class="w-1/3 flex flex-col justify-center items-center space-y-4">
+                  <div class="w-1/3 flex flex-col justify-center items-center space-y-4"
+                       style="min-width: 200px;">
                     <SideBar/>
                   </div>
                 </div>
               </div>
             </div>
             <div class="flex justify-center items-center">
-              <div class="pt-5 mb-8 mx-auto px-5 w-full lg:px-0 lg:max-w-[100ch]">
+              <div class="pt-5 mb-5 mx-auto px-5 w-full lg:px-0 lg:max-w-[100ch]">
                   <WorkSection/>
               </div>
             </div>
 
             <div class="flex justify-center items-center">
-              <div class="pt-5 mb-8 mx-auto px-5 w-full lg:px-0 lg:max-w-[100ch]">
+              <div class="pt-5 mb-5 mx-auto px-5 w-full lg:px-0 lg:max-w-[100ch]">
                 <Projects/>
               </div>
             </div>
@@ -43,10 +44,9 @@ pub fn Home() -> impl IntoView {
 fn SideBar() -> impl IntoView {
   view! {
     <img 
-      src="/public/work_bag.svg" 
-      style="width: 100px;
-            height: 100px;
-            margin-left: 15px; /* Space between icon and text */"
+      src="/public/tim_headshot_small.png"
+      style="border-radius: 50%; border: 2px solid #000000;
+             width: 175px; height: 175px;"
       />
       <button
           onclick="window.open('https://www.linkedin.com/in/timsamuelsen', '_blank')"

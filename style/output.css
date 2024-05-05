@@ -572,10 +572,6 @@ video {
   margin-bottom: 2.5rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -628,10 +624,6 @@ video {
   justify-content: space-between;
 }
 
-.gap-10 {
-  gap: 2.5rem;
-}
-
 .gap-8 {
   gap: 2rem;
 }
@@ -648,29 +640,12 @@ video {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-.space-y-8 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
-}
-
-.space-y-5 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
-}
-
 .rounded-xl {
   border-radius: 0.75rem;
 }
 
 .border {
   border-width: 1px;
-}
-
-.border-gray-700 {
-  --tw-border-opacity: 1;
-  border-color: rgb(55 65 81 / var(--tw-border-opacity));
 }
 
 .bg-white {
@@ -756,13 +731,6 @@ video {
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --sh-class: #4c97f8;
-    --sh-identifier: white;
-    --sh-keyword: #f47067;
-    --sh-string: #0fa295;
-  }
-
   html {
     color-scheme: dark;
   }
@@ -770,6 +738,18 @@ video {
 
 html {
   min-width: 360px;
+}
+
+.common-container {
+  padding-top: 5px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+  max-width: 100ch;
+  /* Adjust as needed */
 }
 
 .work-section {
@@ -866,17 +846,6 @@ html {
   /* Text color change on hover */
 }
 
-.circular-image {
-  border-radius: 50%;
-  /* This makes the image round */
-  border: 2px solid #000000;
-  /* Adjusts the thickness and color of the border */
-  width: 100px;
-  /* Adjusts the size of the image */
-  height: 100px;
-  /* Height should be the same as width to maintain the circle shape */
-}
-
 .hover\:shadow-black\/\[\.4\]:hover {
   --tw-shadow-color: rgb(0 0 0 / .4);
   --tw-shadow: var(--tw-shadow-colored);
@@ -924,3 +893,4 @@ html {
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 }
+

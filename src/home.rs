@@ -56,7 +56,7 @@ pub fn Home() -> impl IntoView {
 fn SideBar() -> impl IntoView {
   view! {
     <img 
-      src="/public/tim_headshot_small.png"
+      src="public/tim_headshot_small.png"
       style="border-radius: 50%; border: 2px solid #000000;
              width: 175px; height: 175px;"
     />

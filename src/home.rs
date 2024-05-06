@@ -21,15 +21,16 @@ pub fn Home() -> impl IntoView {
         <div class="pt-5 mb-5 mx-auto px-5 w-full lg:px-0 lg:max-w-[100ch]">
           <p class="text-3xl font-bold">Tim Samuelsen</p>
 
-          <div class="flex flex-row">
-            <div class="w-2/3 pt-5">
+          <div class="grid grid-cols-2 sm:grid-cols-3">
+            <div class="pt-5 col-span-2">
               <p> 
                 {{about_me_p2}}<br/><br/>
                 {{about_me_p2}}
               </p>
             </div>
 
-            <div class="w-1/3 flex flex-col justify-center items-center space-y-4"
+            <div class="flex flex-row col-span-2 justify-center items-center space-y-4
+                        sm:flex-col sm:col-span-1"
                   style="min-width: 200px;">
               <SideBar/>
             </div>
@@ -55,33 +56,38 @@ pub fn Home() -> impl IntoView {
 #[component]
 fn SideBar() -> impl IntoView {
   view! {
-    <img 
-      src="public/tim_headshot_small.png"
-      style="border-radius: 50%; border: 2px solid #000000;
-             width: 175px; height: 175px;"
-    />
-    <button
-      onclick="window.open('https://www.linkedin.com/in/timsamuelsen', '_blank')"
-      class="button-common"
-      style="width: 80%;"
-    >
-      <div class="flex items-center">
-        <img src="public/linkedin.svg" style="width: 22px; height: 22px; margin-right: 8px;"/>
-        <b>LinkedIn</b>
-      </div>
-      <img src="public/arrow-up-right.svg" style="width: 22px; height: 22px; margin-left: 5px;"/>
-    </button>
+    <div>
+      <img 
+        src="public/tim_headshot_small.png"
+        style="border-radius: 50%; border: 2px solid #000000;
+              width: 175px; height: 175px;"
+      />
+    </div>
 
-    <button
-      onclick="window.open('https://github.com/TimSamuelsen', '_blank')"
-      class="button-common"
-      style="width: 80%;"
-    >
-      <div class="flex items-center">
-        <img src="public/github.svg" style="width: 22px; height: 22px; margin-right: 8px;"/>
-        <b>Github</b>
-      </div>
-      <img src="public/arrow-up-right.svg" style="width: 22px; height: 22px; margin-left: 5px;"/>
-    </button>
+    <div class="w-full">
+      <button
+        onclick="window.open('https://www.linkedin.com/in/timsamuelsen', '_blank')"
+        class="button-common"
+        style="width: 80%;"
+      >
+        <div class="flex items-center">
+          <img src="public/linkedin.svg" style="width: 22px; height: 22px; margin-right: 8px;"/>
+          <b>LinkedIn</b>
+        </div>
+        <img src="public/arrow-up-right.svg" style="width: 22px; height: 22px; margin-left: 5px;"/>
+      </button>
+
+      <button
+        onclick="window.open('https://github.com/TimSamuelsen', '_blank')"
+        class="button-common"
+        style="width: 80%;"
+      >
+        <div class="flex items-center">
+          <img src="public/github.svg" style="width: 22px; height: 22px; margin-right: 8px;"/>
+          <b>Github</b>
+        </div>
+        <img src="public/arrow-up-right.svg" style="width: 22px; height: 22px; margin-left: 5px;"/>
+      </button>
+    </div>
   }
 }

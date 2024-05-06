@@ -4,12 +4,12 @@ use leptos::*;
 pub fn MyPostcards() -> impl IntoView {
   let experiences = vec![
     PostMetadata {
-      image_path: "/public/carbon_backpack.jpg",
+      image_path: "public/carbon_backpack.jpg",
       title: "backpack",
       project_link: "https://www.carbon3d.com/products/ao-suite",
     },
     PostMetadata {
-      image_path: "/public/science_cover_iclip.jpg",
+      image_path: "public/science_cover_iclip.jpg",
       title: "publication",
       project_link: "https://www.science.org/doi/10.1126/sciadv.abq3917"
     },

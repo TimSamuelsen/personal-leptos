@@ -66,10 +66,10 @@ fn SideBar() -> impl IntoView {
       style="width: 80%;"
     >
       <div class="flex items-center">
-        <img src="/public/linkedin.svg" style="width: 22px; height: 22px; margin-right: 8px;"/>
+        <img src="public/linkedin.svg" style="width: 22px; height: 22px; margin-right: 8px;"/>
         <b>LinkedIn</b>
       </div>
-      <img src="/public/arrow-up-right.svg" style="width: 22px; height: 22px; margin-left: 5px;"/>
+      <img src="public/arrow-up-right.svg" style="width: 22px; height: 22px; margin-left: 5px;"/>
     </button>
 
     <button
@@ -78,10 +78,10 @@ fn SideBar() -> impl IntoView {
       style="width: 80%;"
     >
       <div class="flex items-center">
-        <img src="/public/github.svg" style="width: 22px; height: 22px; margin-right: 8px;"/>
+        <img src="public/github.svg" style="width: 22px; height: 22px; margin-right: 8px;"/>
         <b>Github</b>
       </div>
-      <img src="/public/arrow-up-right.svg" style="width: 22px; height: 22px; margin-left: 5px;"/>
+      <img src="public/arrow-up-right.svg" style="width: 22px; height: 22px; margin-left: 5px;"/>
     </button>
   }
 }

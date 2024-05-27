@@ -18,20 +18,20 @@ pub fn Home() -> impl IntoView {
   view! {
     <main class="dark:bg-[#121212] bg-white dark:text-white h-screen w-full py-20 space-y-2 font-robotomono">
       <div class="flex justify-center items-center">
+
         <div class="pt-5 mb-5 mx-auto px-5 w-full lg:px-0 lg:max-w-[100ch]">
           <p class="text-3xl font-bold">Tim Samuelsen</p>
 
-          <div class="grid grid-cols-2 sm:grid-cols-3">
-            <div class="pt-5 col-span-2">
+          <div class="grid grid-cols-3 space-y-4">
+            <div class="intro-text pt-5">
               <p> 
                 {{about_me_p2}}<br/><br/>
                 {{about_me_p2}}
               </p>
             </div>
 
-            <div class="flex flex-row col-span-2 justify-center items-center space-y-4
-                        sm:flex-col sm:col-span-1"
-                  style="min-width: 200px;">
+            <div class="sidebar-container"
+                 style="min-width: 200px;">
               <SideBar/>
             </div>
           </div>
@@ -56,6 +56,7 @@ pub fn Home() -> impl IntoView {
 #[component]
 fn SideBar() -> impl IntoView {
   view! {
+    <div class="sidebar flex-col justify-center items-center space-y-4">
     <div>
       <img 
         src="public/tim_headshot_small.png"
@@ -64,11 +65,11 @@ fn SideBar() -> impl IntoView {
       />
     </div>
 
-    <div class="w-full">
+    <div class="w-full justify-center">
       <button
         onclick="window.open('https://www.linkedin.com/in/timsamuelsen', '_blank')"
         class="button-common"
-        style="width: 80%;"
+        style="width: 100%; max-width: 200px;"
       >
         <div class="flex items-center">
           <img src="public/linkedin.svg" style="width: 22px; height: 22px; margin-right: 8px;"/>
@@ -80,7 +81,7 @@ fn SideBar() -> impl IntoView {
       <button
         onclick="window.open('https://github.com/TimSamuelsen', '_blank')"
         class="button-common"
-        style="width: 80%;"
+        style="width: 100%; max-width: 200px;"
       >
         <div class="flex items-center">
           <img src="public/github.svg" style="width: 22px; height: 22px; margin-right: 8px;"/>
@@ -88,6 +89,7 @@ fn SideBar() -> impl IntoView {
         </div>
         <img src="public/arrow-up-right.svg" style="width: 22px; height: 22px; margin-left: 5px;"/>
       </button>
+    </div>
     </div>
   }
 }

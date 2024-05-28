@@ -655,6 +655,11 @@ video {
   padding-bottom: 5rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .pt-5 {
   padding-top: 1.25rem;
 }
@@ -713,8 +718,17 @@ video {
   .sidebar {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
     justify-items: center;
     align-items: center;
+  }
+
+  .sidebar-image {
+    justify-self: end;
+  }
+
+  .sidebar-buttons {
+    justify-self: start;
   }
 }
 

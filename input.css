@@ -24,8 +24,15 @@
   .sidebar {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
     justify-items: center;
     align-items: center;
+  }
+  .sidebar-image {
+    justify-self: end;
+  }
+  .sidebar-buttons {
+    justify-self: start;
   }
 }
 

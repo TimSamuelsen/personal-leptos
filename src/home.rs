@@ -57,39 +57,39 @@ pub fn Home() -> impl IntoView {
 fn SideBar() -> impl IntoView {
   view! {
     <div class="sidebar flex-col justify-center items-center space-y-4">
-    <div>
-      <img 
-        src="public/tim_headshot_small.png"
-        style="border-radius: 50%; border: 2px solid #000000;
-              width: 175px; height: 175px;"
-      />
-    </div>
+      <div class="sidebar-image">
+        <img 
+          src="public/tim_headshot_small.png"
+          style="border-radius: 50%; border: 2px solid #000000;
+                width: 175px; height: 175px;"
+        />
+      </div>
 
-    <div class="w-full justify-center">
-      <button
-        onclick="window.open('https://www.linkedin.com/in/timsamuelsen', '_blank')"
-        class="button-common"
-        style="width: 100%; max-width: 200px;"
-      >
-        <div class="flex items-center">
-          <img src="public/linkedin.svg" style="width: 22px; height: 22px; margin-right: 8px;"/>
-          <b>LinkedIn</b>
-        </div>
-        <img src="public/arrow-up-right.svg" style="width: 22px; height: 22px; margin-left: 5px;"/>
-      </button>
+      <div class="sidebar-buttons w-full flex flex-col justify-center items-center">
+        <button
+          onclick="window.open('https://www.linkedin.com/in/timsamuelsen', '_blank')"
+          class="button-common"
+          style="max-width: 200px;"
+        >
+          <div class="flex items-center">
+            <img src="public/linkedin.svg" style="width: 22px; height: 22px; margin-right: 8px;"/>
+            <b>LinkedIn</b>
+          </div>
+          <img src="public/arrow-up-right.svg" style="width: 22px; height: 22px; margin-left: 5px;"/>
+        </button>
 
-      <button
-        onclick="window.open('https://github.com/TimSamuelsen', '_blank')"
-        class="button-common"
-        style="width: 100%; max-width: 200px;"
-      >
-        <div class="flex items-center">
-          <img src="public/github.svg" style="width: 22px; height: 22px; margin-right: 8px;"/>
-          <b>Github</b>
-        </div>
-        <img src="public/arrow-up-right.svg" style="width: 22px; height: 22px; margin-left: 5px;"/>
-      </button>
-    </div>
+        <button
+          onclick="window.open('https://github.com/TimSamuelsen', '_blank')"
+          class="button-common"
+          style="max-width: 200px;"
+        >
+          <div class="flex items-center">
+            <img src="public/github.svg" style="width: 22px; height: 22px; margin-right: 8px;"/>
+            <b>Github</b>
+          </div>
+          <img src="public/arrow-up-right.svg" style="width: 22px; height: 22px; margin-left: 5px;"/>
+        </button>
+      </div>
     </div>
   }
 }

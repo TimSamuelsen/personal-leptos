@@ -16,10 +16,10 @@ pub fn Home() -> impl IntoView {
   "#;
 
   view! {
-    <main class="dark:bg-[#121212] bg-white dark:text-white h-screen w-full py-20 space-y-2 font-robotomono">
+    <main class="dark:bg-[#121212] bg-white dark:text-white h-screen w-full py-8 space-y-2 font-robotomono">
       <div class="flex justify-center items-center">
 
-        <div class="pt-5 mb-5 mx-auto px-5 w-full lg:px-0 lg:max-w-[100ch]">
+        <div class="pt-3 mb-5 mx-auto px-5 w-full lg:px-0 lg:max-w-[100ch]">
           <p class="text-3xl font-bold">Tim Samuelsen</p>
 
           <div class="grid grid-cols-3 space-y-4">

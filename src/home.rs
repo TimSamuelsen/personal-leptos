@@ -1,7 +1,7 @@
 use leptos::*;
 
 use crate::components::work::WorkSection;
-use crate::components::postcard::MyPostcards;
+use crate::components::postcard::Postcards;
 
 #[component]
 pub fn Home() -> impl IntoView {
@@ -46,7 +46,7 @@ pub fn Home() -> impl IntoView {
 
       <div class="flex justify-center items-center">
         <div class="pt-5 mb-5 mx-auto px-5 w-full lg:px-0 lg:max-w-[100ch]">
-          <MyPostcards/>
+          <Postcards/>
         </div>
       </div>
     </main>      

@@ -650,32 +650,17 @@ video {
   padding-right: 1.25rem;
 }
 
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-.pt-5 {
-  padding-top: 1.25rem;
-}
-
 .pt-3 {
   padding-top: 0.75rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .text-3xl {
@@ -744,6 +729,13 @@ video {
   .sidebar-buttons {
     justify-self: start;
   }
+
+  .work-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    /* Space between icon and text */
+  }
 }
 
 @media (orientation: landscape) {
@@ -792,8 +784,6 @@ html {
   display: flex;
   align-items: center;
   /* Ensure content aligns along the center line */
-  padding: 5px;
-  /* Add padding for spacing */
   padding-bottom: 10px;
 }
 
@@ -803,6 +793,7 @@ html {
   /* Stack company and job title vertically */
   align-items: flex-start;
   /* Align text to the left */
+  max-width: 50%;
 }
 
 .work-icon {
@@ -828,6 +819,7 @@ html {
   /* Slightly larger font size for dates */
   margin-left: auto;
   color: gray;
+  max-width: 25%;
 }
 
 .section-header {

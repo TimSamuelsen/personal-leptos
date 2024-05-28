@@ -1,7 +1,8 @@
 
 use leptos::*;
 
-pub fn MyPostcards() -> impl IntoView {
+#[component]
+pub fn Postcards() -> impl IntoView {
   let experiences = vec![
     PostMetadata {
       image_path: "public/carbon_backpack.jpg",

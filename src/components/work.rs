@@ -68,7 +68,7 @@ pub fn WorkSection() -> impl IntoView {
         <div class="section-header">Work</div>
       </div>
 
-      {experiences.into_iter().map(|exp| (WorkExperienceItemProps { exp: exp })).collect::<Vec<_>>()}
+      {experiences.into_iter().map(|exp| (WorkExperienceItemProps { exp })).collect::<Vec<_>>()}
 
       <div class="flex justify-between items-center w-full"
             style="border-top: 1px solid #444; padding: 15px;"

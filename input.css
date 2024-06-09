@@ -112,7 +112,8 @@ html {
   font-size: 1em; /* Slightly larger font size for dates */
   margin-left: auto;
   color: gray;
-  max-width: 25%;
+  max-width: 30%;
+  min-width: 80px;
 }
 
 .section-header {

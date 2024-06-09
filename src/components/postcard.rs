@@ -18,7 +18,7 @@ pub fn Postcards() -> impl IntoView {
 
   view! {
     <div class="grid sm:grid-cols-2 lg:grid-cols-2 gap-8">
-    {experiences.into_iter().map(|post_metadata| (PostCardProps { post_metadata: post_metadata })).collect::<Vec<_>>()}
+    {experiences.into_iter().map(|post_metadata| (PostCardProps { post_metadata })).collect::<Vec<_>>()}
     </div>
   }
 

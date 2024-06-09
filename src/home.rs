@@ -5,7 +5,7 @@ use crate::components::postcard::Postcards;
 
 #[component]
 pub fn Home() -> impl IntoView {
-  let about_me_p1 = r#"
+  let _about_me_p1 = r#"
       MS in Mechanical Engineering graduate student at Stanford University, specializing in mechatronics and 
       smart product design. Software and systems developer for advanced CLIP 3D printers at the DeSimone Research Group.
   "#;

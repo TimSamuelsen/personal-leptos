@@ -14,6 +14,7 @@ pub fn Home() -> impl IntoView {
     the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
     of type and scrambled it to make a type specimen book.
   "#;
+  let about_me_p3 = r#""#;
 
   view! {
     <main class="dark:bg-[#121212] bg-white dark:text-white h-screen w-full py-8 space-y-2 font-robotomono">
@@ -25,8 +26,8 @@ pub fn Home() -> impl IntoView {
           <div class="grid grid-cols-3 space-y-4">
             <div class="intro-text pt-5">
               <p> 
-                {{about_me_p2}}<br/><br/>
-                {{about_me_p2}}
+                {{about_me_p3}}<br/><br/>
+                {{about_me_p3}}
               </p>
             </div>
 

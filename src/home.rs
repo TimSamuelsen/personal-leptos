@@ -7,7 +7,7 @@ use crate::components::postcard::Postcards;
 pub fn Home() -> impl IntoView {
   let about_me = r#"
   Staff Software Engineer at Carbon, building scalable software systems for automation and device reliability. 
-  Previously a graduate student researcher at Stanford, developing software for cutting-edge 3D printing research.
+  Previously a graduate researcher at Stanford, where I developed software for cutting-edge 3D printing technologies.
   "#;
 
   view! {
@@ -17,7 +17,7 @@ pub fn Home() -> impl IntoView {
         <div class="pt-3 mb-5 mx-auto px-5 w-full lg:px-0 lg:max-w-[100ch]">
           <div class="grid grid-cols-3 space-y-2">
             <div class="intro-text pt-5">
-              <p class="text-3xl font-bold mb-4">Tim Samuelsen</p>
+              <p class="text-3xl font-bold">Tim Samuelsen</p>
               <p class="pt-3"> 
                 {{about_me}}<br/><br/>
               </p>

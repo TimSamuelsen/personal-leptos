@@ -28,10 +28,17 @@ pub fn WorkSection() -> impl IntoView {
   let experiences = vec![
     WorkExperience {
       company: "Carbon",
+      job_title: "Staff Software Engineer",
+      icon: "public/carbon.svg",
+      start_date: "Apr 2025",
+      end_date: "Present",
+    },
+    WorkExperience {
+      company: "Carbon",
       job_title: "Senior Software Engineer",
       icon: "public/carbon.svg",
       start_date: "Apr 2023",
-      end_date: "Present",
+      end_date: "Apr 2025",
     },
     WorkExperience {
         company: "Carbon",

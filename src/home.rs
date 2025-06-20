@@ -5,16 +5,10 @@ use crate::components::postcard::Postcards;
 
 #[component]
 pub fn Home() -> impl IntoView {
-  let _about_me_p1 = r#"
-      MS in Mechanical Engineering graduate student at Stanford University, specializing in mechatronics and 
-      smart product design. Software and systems developer for advanced CLIP 3D printers at the DeSimone Research Group.
+  let about_me = r#"
+  Staff Software Engineer at Carbon, building scalable software systems for automation and device reliability. 
+  Previously a graduate student researcher at Stanford, developing software for cutting-edge 3D printing research.
   "#;
-  let about_me_p2 = r#"
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
-    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
-    of type and scrambled it to make a type specimen book.
-  "#;
-  let about_me_p3 = r#""#;
 
   view! {
     <main class="dark:bg-[#121212] bg-white dark:text-white h-screen w-full py-8 space-y-2 font-robotomono">
@@ -26,8 +20,7 @@ pub fn Home() -> impl IntoView {
           <div class="grid grid-cols-3 space-y-4">
             <div class="intro-text pt-5">
               <p> 
-                {{about_me_p3}}<br/><br/>
-                {{about_me_p3}}
+                {{about_me}}<br/><br/>
               </p>
             </div>
 
